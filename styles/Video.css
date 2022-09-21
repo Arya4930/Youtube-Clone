@@ -9,6 +9,7 @@
     row-gap: 40px;
     background-color: #f9f9f9;
     padding-top: 25px;
+    padding-left: 95px;
 }
 .video-info-grid {
     display: grid;
