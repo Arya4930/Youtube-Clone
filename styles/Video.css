@@ -1,6 +1,7 @@
 .thumbnail {
     width: 100%;
     border-radius: 10px;
+    margin-bottom: 5px;
 }
 .thumbnail-row {
     position: relative;
