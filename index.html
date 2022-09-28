@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/sidebar.css">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="left-section"> 
         <img src="icons/hamburger-menu.svg" class="hamburger-menu">
         <img src="icons/youtube-logo.svg" class="Youtube-logo">
@@ -24,23 +24,47 @@
         <input type="text" placeholder="Search" class="Search-bar">
         <button class="Search-button">
           <img src="icons/search.svg" class="Search-image">
+          <div class="tooltip">
+            Search
+          </div>
         </button>
         <button class="Voice-Search-Button">
           <img src="icons/voice-search-icon.svg" class="voice-search">
+          <div class="tooltip">
+            Search with your voice
+          </div>
         </button>
       </div>
       <div class="right-section">
-        <img src="icons/upload.svg" class="upload-icon">
-        <img src="icons/youtube-apps.svg" class="Youtube-apps-icon">
+        <div class="upload-icon-container">
+          <img src="icons/upload.svg" class="upload-icon">
+          <div class="tooltip">
+            Create
+          </div>
+        </div>
+        <div class="Youtube-apps-icon">
+          <img src="icons/youtube-apps.svg" class="Youtube-apps-icon">
+          <div class="tooltip">
+            Youtube Apps
+          </div>
+        </div>
         <div class="notifcations-icon-container">
+          <div class="tooltip">
+            notifcations
+          </div>
           <img src="icons/notifications.svg" class="notification-icon">
           <div class="notification-count">3</div>
         </div>
-        <img src="icons/my-channel.png" class="my-channel-icon">
+        <div class="my-channel-container">
+          <div class="tooltip">
+            My Channel
+          </div>
+          <img src="icons/my-channel.png" class="my-channel-icon">
+        </div>
       </div> 
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
       <div class="sidebar-link">
         <img src="icons/home.svg">
         <div> Home</div>
@@ -65,208 +89,210 @@
         <img src="icons/library.svg">
         <div> Library</div>
       </div>
-    </div>
+    </nav>
 
-    <div class="video-grid">
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
-          <div class="video-time"> 14:20</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-1.jpeg" class="profile-picture">
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+            <div class="video-time"> 14:20</div>
           </div>
-          <div class="video-info">
-            <P class="video-title">
-              Talking Tech and AI with Google CEO Sundar Pichai!
-            </P>
-            <P class="video-creator">
-              Marques Brownlee &#10003;
-            </P>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-1.jpeg" class="profile-picture">
+            </div>
+            <div class="video-info">
+              <P class="video-title">
+                Talking Tech and AI with Google CEO Sundar Pichai!
+              </P>
+              <P class="video-creator">
+                Marques Brownlee &#10003;
+              </P>
+        
+              <p class="video-stats">
+                3.4M Views &#183; 6 months ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+            <div class="video-time"> 8:22</div>
+          </div>
+          <div class="video-info-grid">
+              
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-2.jpeg" class="profile-picture">
+            </div><div class="video-info">
+              <P class="video-title">
+                Try Not To Laugh Challenge #9!
+              </P>
+              <P class="video-creator">
+                Markiplier &#10003;
+              </P>
+          
+              <p class="video-stats">
+                19M Views &#183; 4 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+            <div class="video-time"> 9:13</div>
+          </div>
+          <div class="video-info-grid">
+              
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-3.jpeg" class="profile-picture">
+            </div>
       
-            <p class="video-stats">
-              3.4M Views &#183; 6 months ago
-            </p>
+            <div class="video-info">
+              <P class="video-title">
+                Crazy Tik Toks Taken Moments Before DISASTER!
+              </P>
+              <P class="video-creator">
+                SSSniperWolf &#10003;
+              </P>
+          
+              <p class="video-stats">
+                12M Views &#183; 1 years ago
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
-          <div class="video-time"> 8:22</div>
-        </div>
-        <div class="video-info-grid">
-            
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-2.jpeg" class="profile-picture">
-          </div><div class="video-info">
-            <P class="video-title">
-              Try Not To Laugh Challenge #9!
-            </P>
-            <P class="video-creator">
-              Markiplier &#10003;
-            </P>
-        
-            <p class="video-stats">
-              19M Views &#183; 4 years ago
-            </p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
-          <div class="video-time"> 9:13</div>
-        </div>
-        <div class="video-info-grid">
-            
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-3.jpeg" class="profile-picture">
-          </div>
     
-          <div class="video-info">
-            <P class="video-title">
-              Crazy Tik Toks Taken Moments Before DISASTER!
-            </P>
-            <P class="video-creator">
-              SSSniperWolf &#10003;
-            </P>
-        
-            <p class="video-stats">
-              12M Views &#183; 1 years ago
-            </p>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+            <div class="video-time"> 22:09</div>
+          </div>
+          <div class="video-info-grid">
+              
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-4.jpeg" class="profile-picture">
+            </div>
+      
+            <div class="video-info">
+              <P class="video-title">
+                The Simplest Math Problem No One Can Solve - Collatz Conjecture!
+              </P>
+              <P class="video-creator">
+                Veritasium &#10003;
+              </P>
+          
+              <p class="video-stats">
+                18M Views &#183; 4 months ago
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
-          <div class="video-time"> 22:09</div>
-        </div>
-        <div class="video-info-grid">
-            
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-4.jpeg" class="profile-picture">
-          </div>
-    
-          <div class="video-info">
-            <P class="video-title">
-              The Simplest Math Problem No One Can Solve - Collatz Conjecture!
-            </P>
-            <P class="video-creator">
-              Veritasium &#10003;
-            </P>
-        
-            <p class="video-stats">
-              18M Views &#183; 4 months ago
-            </p>
-          </div>
-        </div>
-      </div>
 
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
-          <div class="video-time"> 11:17</div>
-        </div>
-        <div class="video-info-grid">
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-5.jpeg" class="profile-picture">
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+            <div class="video-time"> 11:17</div>
           </div>
-          <div class="video-info">
-            <P class="video-title">
-              Kadane's Algorithm to Maximum Sum Subarray Problem
-            </P>
-            <P class="video-creator">
-              CS dojo
-            </P>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-5.jpeg" class="profile-picture">
+            </div>
+            <div class="video-info">
+              <P class="video-title">
+                Kadane's Algorithm to Maximum Sum Subarray Problem
+              </P>
+              <P class="video-creator">
+                CS dojo
+              </P>
+        
+              <p class="video-stats">
+                519K views &#183; 5 years ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-6.webp" class="thumbnail">
+            <div class="video-time"> 19:15</div>
+          </div>
+          <div class="video-info-grid">
+              
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-6.jpeg" class="profile-picture">
+            </div><div class="video-info">
+              <P class="video-title">
+                Anything You Can Fit In The Circle I’ll Pay For!
+              </P>
+              <P class="video-creator">
+                Mr Beast &#10003;
+              </P>
+          
+              <p class="video-stats">
+                141M Views &#183; 1 year ago
+              </p>
+            </div>
+          </div>
+        </div>
+    
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-7.webp" class="thumbnail">
+            <div class="video-time"> 10:13</div>
+          </div>
+          <div class="video-info-grid">
+              
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-7.jpeg" class="profile-picture">
+            </div>
       
-            <p class="video-stats">
-              519K views &#183; 5 years ago
-            </p>
+            <div class="video-info">
+              <P class="video-title">
+                Why Planes Don't Fly Over Tibet
+              </P>
+              <P class="video-creator">
+                RealLifeLore &#10003;
+              </P>
+          
+              <p class="video-stats">
+                6.6M Views &#183; 1 year ago
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-6.webp" class="thumbnail">
-          <div class="video-time"> 19:15</div>
-        </div>
-        <div class="video-info-grid">
-            
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-6.jpeg" class="profile-picture">
-          </div><div class="video-info">
-            <P class="video-title">
-              Anything You Can Fit In The Circle I’ll Pay For!
-            </P>
-            <P class="video-creator">
-              Mr Beast &#10003;
-            </P>
-        
-            <p class="video-stats">
-              141M Views &#183; 1 year ago
-            </p>
-          </div>
-        </div>
-      </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-7.webp" class="thumbnail">
-          <div class="video-time"> 10:13</div>
-        </div>
-        <div class="video-info-grid">
-            
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-7.jpeg" class="profile-picture">
-          </div>
     
-          <div class="video-info">
-            <P class="video-title">
-              Why Planes Don't Fly Over Tibet
-            </P>
-            <P class="video-creator">
-              RealLifeLore &#10003;
-            </P>
-        
-            <p class="video-stats">
-              6.6M Views &#183; 1 year ago
-            </p>
+        <div class="video-preview">
+          <div class="thumbnail-row">
+            <img src="thumbnails/thumbnail-8.webp" class="thumbnail">
+            <div class="video-time"> 7:12</div>
+          </div>
+          <div class="video-info-grid">
+              
+            <div class="channel-picture">
+              <img src="channel-pictures/channel-8.jpeg" class="profile-picture">
+            </div>
+      
+            <div class="video-info">
+              <P class="video-title">
+                Inside The World's Biggest Passenger Plane
+              </P>
+              <P class="video-creator">
+                Tech Vision &#10003;
+              </P>
+          
+              <p class="video-stats">
+                3.7M Views &#183; 10 months ago
+              </p>
+            </div>
           </div>
         </div>
-      </div>
-  
-      <div class="video-preview">
-        <div class="thumbnail-row">
-          <img src="thumbnails/thumbnail-8.webp" class="thumbnail">
-          <div class="video-time"> 7:12</div>
-        </div>
-        <div class="video-info-grid">
-            
-          <div class="channel-picture">
-            <img src="channel-pictures/channel-8.jpeg" class="profile-picture">
-          </div>
-    
-          <div class="video-info">
-            <P class="video-title">
-              Inside The World's Biggest Passenger Plane
-            </P>
-            <P class="video-creator">
-              Tech Vision &#10003;
-            </P>
-        
-            <p class="video-stats">
-              3.7M Views &#183; 10 months ago
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+    </main>
   </body>
 </html>
